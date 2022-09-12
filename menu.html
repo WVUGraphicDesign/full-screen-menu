@@ -8,6 +8,7 @@
   <body>
     <button class="menu-btn" type="button" onclick="myMenu();">Menu</button>
     <div id="fs-menu">
+      <button class="close-btn" type="button" onclick="closeMenu();">Close</button>
     <ul>
       <li>Item</li>
       <li>Item</li>
@@ -18,9 +19,17 @@
     </div>
     <script>
       var menu = document.getElementById("fs-menu");
+      var menuOpenBtn = document.getElementsByClassName("menu-btn");
+      menuOpenBtn = menuOpenBtn[0];
 
       function myMenu() {
         menu.classList.toggle("show");
+        menuOpenBtn.style.display = "none";
+      }
+
+      function closeMenu() {
+        menu.classList.remove("show");
+        menuOpenBtn.style.display = "block";
       }
     </script>
   </body>

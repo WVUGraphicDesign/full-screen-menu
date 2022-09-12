@@ -8,6 +8,8 @@
 #fs-menu.show {
   display: block;
   background-color: pink;
+  top: 0;
+  left: 0;
 }
 
 @media (min-width: 992px) {
