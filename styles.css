@@ -16,6 +16,9 @@
   button.menu-btn {
     display: none;
   }
+  button.close-btn {
+    display: none;
+  }
 
   #fs-menu {
     position: static;
